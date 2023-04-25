@@ -3,7 +3,8 @@
  * the deprecated global.utilities" import
  */
 
-@import "@baloise/design-system-components/src/styles/global.utilities";
+@import "@baloise/design-system-css/sass/mixins";
+@import "@baloise/design-system-css/sass/legacy";
 
 :host {
   display: block;
