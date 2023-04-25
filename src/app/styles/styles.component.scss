@@ -1,0 +1,13 @@
+/**
+ * In this case we use legacy SASS variables and
+ * the deprecated global.utilities" import
+ */
+
+@import "@baloise/design-system-components/src/styles/global.utilities";
+
+:host {
+  display: block;
+  background: $blue;
+  color: $white;
+  padding: var(--bal-space-large);
+}
