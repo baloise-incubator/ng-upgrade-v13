@@ -2,21 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import {
-  BalCoreModule,
-  BalButtonModule,
-  BalHeadingModule,
-  BalTableModule,
-  BalStackModule,
-  BalContentModule,
-  BalIconModule,
-  BalCheckboxModule,
-  BalLabelModule,
-  BalTextModule,
-  BalPopoverModule,
-  BalInputModule,
-  BalNotificationModule,
-} from '@baloise/design-system-components-angular';
+import { BaloiseDesignSystemModule } from '@baloise/design-system-components-angular';
 
 import { AppComponent } from './app.component';
 import { StylesComponent } from './styles/styles.component';
@@ -42,21 +28,7 @@ import { AgGridModule } from 'ag-grid-angular';
     FormsModule,
     ReactiveFormsModule,
     // Enables the Design System globally for your application
-    BalCoreModule.forRoot(),
-    // Import the Design System components
-    BalButtonModule,
-    BalHeadingModule,
-    BalTableModule,
-    BalStackModule,
-    BalContentModule,
-    BalIconModule,
-    BalCheckboxModule,
-    BalLabelModule,
-    BalTextModule,
-    BalPopoverModule,
-    BalInputModule,
-    BalNotificationModule,
-    BalTableModule,
+    BaloiseDesignSystemModule.forRoot(),
     // Third Party Modules
     AgGridModule,
   ],
