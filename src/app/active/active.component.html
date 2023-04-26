@@ -1,5 +1,5 @@
 <bal-heading level="h3" class="mt-medium">Popover</bal-heading>
-<bal-popover autoTrigger [value]="isPopoverActive" (balChange)="onPopoverChange($event)">
+<bal-popover autoTrigger [active]="isPopoverActive" (balChange)="onPopoverChange($event)">
   <bal-button bal-popover-trigger aria-haspopup="true" color="info">
     Trigger Popover
   </bal-button>

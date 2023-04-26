@@ -5,7 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './types.component.html',
 })
 export class TypesComponent {
-  onInputChange2(event: BalEvents.BalInputChange) {
+  inputValue? = '';
+
+  notificationColor: BalProps.BalNotificationColor = 'info';
+
+  onInputChange(event: BalEvents.BalInputChange) {
     this.inputValue = event.detail;
     if (this.inputValue) {
       this.notificationColor = 'success';
@@ -13,17 +17,4 @@ export class TypesComponent {
       this.notificationColor = 'danger';
     }
   }
-
-  inputValue? = '';
-
-  notificationColor: BalProps.BalNotificationColor = 'info';
-
-  // onInputChange(event: Event) {
-  //   this.inputValue = event.detail;
-  //   if (this.inputValue) {
-  //     this.notificationColor = 'success';
-  //   } else {
-  //     this.notificationColor = 'danger';
-  //   }
-  // }
 }

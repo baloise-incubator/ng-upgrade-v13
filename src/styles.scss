@@ -27,4 +27,7 @@
 @import '@baloise/design-system-css/css/spacing';
 @import '@baloise/design-system-css/css/typography';
 
-@import '@baloise/design-system-components-table/scss/design-system-table.sass';
+@import 'ag-grid-community/styles/ag-grid';
+@import 'ag-grid-community/styles/ag-theme-alpine';
+@import '@baloise/design-system-components-table/css/design-system-table';
+
